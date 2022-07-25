@@ -1,74 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antonio Spada</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="/assets/logo.svg" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                <a href="#" class="
-                nav__link--anchor
-                link__hover-effect
-                link__hover-effect--black
-
-                ">About</a>
-            </li>
-                <li class="nav__link">
-                <a href="#" class="
-                nav__link--anchor
-                link__hover-effect
-                link__hover-effect--black
-
-                ">Project</a>
-            </li>
-                <li class="nav__link">
-                <a href="#" class="
-                nav__link--anchor
-                link__hover-effect
-                link__hover-effect--black
-                ">Contact</a>
-            </li>
-                <li class="nav__link">
-                <a href="#" class="
-                nav__link--anchor
-                link__hover-effect
-                link__hover-effect--black
-                "><i class="fas fa-moon"></i></a>
-            </li>
-            </ul>
-        </nav>
-<header class="header">
-
-<div class="header__content">
-    <h1 class="title">Hey,</h1>
-    <h1 class="title">  I'm <span class="secondaryColor">Antonio</span></h1>
-    <p class="header__para">
-        I'm a <b class="secondaryColor"> Frontend Software Engineer</b> with a strong passion for building Web Apps with a focus on great user experiences.
-        <br>
-        Here's a bit  <b class="secondaryColor"> more about me.</b>
-    </p>
-    <div class="social__icons">
-        <a href="" class="social__link">
-            <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="" class="social__link">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="" class="social__link">
-            <i class="fas fa-file"></i>
-        </a>
-    </div>
-</div></header>
+      <nav>
+        <figure>
+          <img id="personal-logo" src="/assets/logo.svg" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link onClick">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link onClick">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Project</a
+            >
+          </li>
+          <li class="nav__link onClick">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link onClick">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-moon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey,</h1>
+          <h1 class="title">I'm <span class="secondaryColor">Antonio</span></h1>
+          <p class="header__para">
+            I'm a <b class="secondaryColor"> Frontend Software Engineer</b> with
+            a strong passion for building Web Apps with a focus on great user
+            experiences.
+            <br />
+            Here's a bit more <b class="secondaryColor">about me.</b>
+          </p>
+          <div class="social__icons">
+            <a
+              href="https://google.com"
+              target="_blank"
+              class="social__link onClick"
+            >
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a
+              href="https://google.com"
+              target="_blank"
+              class="social__link onClick"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="./assets/David Bragg Resume.pdf"
+              target="_blank"
+              class="social__link onClick"
+            >
+              <i class="fas fa-file"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <button class="mail_btn onClick">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon onClick"></div>
+      </a>
     </section>
-</body>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my<span class="secondaryColor"> Projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="projects">
+              <div class="project__wrapper">
+                <img src="./assets/google mockup.png" alt="project__img" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis tempore voluptatum cupiditate, odit quaerat
+                    aspernatur illum temporibus molestiae quos consequuntur
+                    atque çqui est alias, quae distinctio corrupti dolorum
+                    sapiente iure.
+                  </p>
+                  <div class="project__descripton--links">
+                    <a href="#" class="project__description--link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                        <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
