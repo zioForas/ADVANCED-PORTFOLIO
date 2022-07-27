@@ -22,7 +22,7 @@
     </script>
   </head>
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="/assets/logo.svg" alt="" />
@@ -42,14 +42,14 @@
               >Project</a
             >
           </li>
-          <li class="nav__link onClick">
+          <li class="nav__link onClick" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link onClick">
+          <li class="nav__link onClick" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -67,7 +67,7 @@
             a strong passion for building Web Apps with a focus on great user
             experiences.
             <br />
-            Here's a bit more <b class="secondaryColor">about me.</b>
+            Here's a bit more <b class="secondaryColor onClick" onclick="toggleModal()" >about me.</b>
           </p>
           <div class="social__icons">
             <a
@@ -161,7 +161,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit onClick"></i>
+        <i class="fas fa-times modal__exit onClick" onclick="toggleModal()"></i>
 
           <h3 class="modal__title modal__title contact">Let's Have a chat!</h3>
           <h3 class="modal__sub-title modal__sub-title contact">
@@ -197,6 +197,15 @@
           </div>
         </div>
       </div>
+      <img src="/assets/semi circle.svg" class="shape shape--0" >
+      <img src="/assets/circle.svg" class="shape shape--1" >
+      <img src="/assets/squiggly.svg" class="shape shape--2" >
+      <img src="/assets/circle.svg" class="shape shape--3" >
+      <img src="/assets/triangle.svg" class="shape shape--4" >
+      <img src="/assets/circle.svg" class="shape shape--5" >
+      <img src="/assets/squiggly.svg" class="shape shape--6" >
+      <img src="/assets/circle.svg" class="shape shape--7" >
+      <img src="/assets/semi circle.svg" class="shape shape--8" >
     </section>
     <section id="projects">
       <div class="container">

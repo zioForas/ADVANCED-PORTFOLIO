@@ -26,6 +26,7 @@ button {
 
 section {
   background-color: rgb(245, 245, 245);
+  transition: all 300ms ease;
 }
 
 input, textarea {
@@ -83,6 +84,34 @@ input:focus, textarea:focus {
   transform: scale(0.8);
 }
 
+
+.dark-theme .title, 
+.dark-theme .section__title, 
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para
+{
+color: white;
+}
+
+.dark-theme section {
+  background-color: #242424;
+}
+
+.dark-theme .link__hover-effect--black:after {
+  background-color: #1db954;
+}
+.dark-theme .link_hover-effect-white:after {
+  background-color: #1db954;
+}
+.dark-theme #personal-logo {
+  filter: none;
+} 
+
+.dark-theme .scroll__icon {
+  border-color: white;
+}
 /*
 
     LANDING PAGE
@@ -200,13 +229,33 @@ input:focus, textarea:focus {
     height: 3px;
     width: 0;
     right: 0;
-   background-color: #1db954;
+   background-color: #501163;
    transition: all 200ms ease;
 }
 .link__hover-effect:hover:after{
     left: 0;
     width: 100%;
 }
+
+
+nav,
+.scroll,
+.header {
+opacity: 1;
+visibility: visible;
+transition: all 600ms 550ms;
+}
+
+.modal--open  nav,
+.modal--open .scroll,
+.modal--open .header {
+opacity: 0;
+visibility: hidden;
+transition: all 400ms;
+}
+
+
+
 /*
 
     NAVIGATION
@@ -542,3 +591,74 @@ footer {
 .footer__copyright{
     color: white;
 }
+
+
+
+/*
+
+
+
+SHAPES
+
+
+Shapeson the first row
+height=35vh
+
+shapes on the second row
+height=70vh
+
+shapes on third row
+height=95vh
+
+shapes on the first column
+width = 5vw
+
+shapes on the second column
+width = 50vw
+
+shapes on the third column
+width = 89vw
+*/
+
+.shape {
+  position: fixed;
+}
+
+.shape--0 {
+  top: 15vh;
+  left: 5vw;
+}
+.shape--1 {
+  top: 15vh;
+  left: 50vw;
+}
+.shape--2 {
+  top: 15vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 50vh;
+  left: 50vw;
+}
+.shape--5 {
+  top: 50vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 80vh;
+  left: 50vw;
+}
+.shape--8 {
+  top: 80vh;
+  left: 80vw;
+}
+
+
