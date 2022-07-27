@@ -28,18 +28,18 @@
           <img id="personal-logo" src="/assets/logo.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link onClick">
+          <li class="nav__link onClick"onclick="toggleModal()"  >
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >About</a
             >
           </li>
-          <li class="nav__link onClick">
+          <li class="nav__link onClick " >
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Project</a
+              >Projects</a
             >
           </li>
           <li class="nav__link onClick" onclick="toggleModal()">
@@ -71,21 +71,21 @@
           </p>
           <div class="social__icons">
             <a
-              href="https://google.com"
+              href="https://github.com/zioForas"
               target="_blank"
               class="social__link onClick"
             >
               <i class="fab fa-twitter-square"></i>
             </a>
             <a
-              href="https://google.com"
+              href="https://github.com/zioForas"
               target="_blank"
               class="social__link onClick"
             >
               <i class="fab fa-github"></i>
             </a>
             <a
-              href="./assets/David Bragg Resume.pdf"
+              href="./assets/Antonio-Spada resume.pdf"
               target="_blank"
               class="social__link onClick"
             >
@@ -94,9 +94,12 @@
           </div>
         </div>
       </header>
-      <button class="mail_btn onClick" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail_btn onClick" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      
       <a href="#projects" class="scroll">
         <div class="scroll__icon onClick"></div>
       </a>
@@ -316,28 +319,30 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="git"
+              href="https://github.com/zioForas" target="_blank"
               class="footer__social--link link__hover-effect link_hover-effect-white"
             >
               Github
             </a>
 
-            <a
-              href="git"
+            <a 
+              href="#"
+             
               class="footer__social--link link__hover-effect link_hover-effect-white"
             >
               LinkedIn
             </a>
 
             <a
-              href="git"
+              href="#" 
+              onclick="toggleModal()"
               class="footer__social--link link__hover-effect link_hover-effect-white"
             >
               Contact
             </a>
 
             <a
-              href="git"
+              href="/assets/Antonio-Spada resume.pdf" target="_blank"
               class="footer__social--link link__hover-effect link_hover-effect-white"
             >
               Resume
